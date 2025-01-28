@@ -1,15 +1,16 @@
-public class Pizza implements MenuItem {
+public class Dessert implements MenuItem{
 
     String name;
     double price;
     String description;
 
-    public Pizza(String name, double price, String description) {
+    public Dessert(String name, double price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -18,14 +19,16 @@ public class Pizza implements MenuItem {
         this.name = name;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }
 
     public void setPrice(double price) {
-        this.price += price;
+        this.price = price;
     }
 
+    @Override
     public String getDescription() {
         return description;
     }

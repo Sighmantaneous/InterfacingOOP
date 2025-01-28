@@ -23,7 +23,7 @@ public class Burger implements MenuItem{
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        this.price += price;
     }
 
     public String getDescription() {
